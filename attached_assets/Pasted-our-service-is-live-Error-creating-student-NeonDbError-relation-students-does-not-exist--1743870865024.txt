@@ -1,0 +1,76 @@
+our service is live 🎉
+Error creating student: NeonDbError: relation "students" does not exist
+    at execute (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1556:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async NeonHttpPreparedQuery.execute (file:///opt/render/project/src/node_modules/drizzle-orm/neon-http/session.js:40:20)
+    at async DatabaseStorage.createStudent (file:///opt/render/project/src/dist/index.js:93:23)
+    at async file:///opt/render/project/src/dist/index.js:146:26 {
+  severity: 'ERROR',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '13',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1449',
+  routine: 'parserOpenTable',
+  sourceError: undefined
+}
+4:33:38 PM [express] POST /api/students 500 in 511ms :: {"message":"Failed to create student"}
+Error fetching students: NeonDbError: relation "students" does not exist
+    at execute (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1556:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async NeonHttpPreparedQuery.execute (file:///opt/render/project/src/node_modules/drizzle-orm/neon-http/session.js:40:20)
+    at async DatabaseStorage.getStudents (file:///opt/render/project/src/dist/index.js:86:12)
+    at async file:///opt/render/project/src/dist/index.js:112:25 {
+  severity: 'ERROR',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '78',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1449',
+  routine: 'parserOpenTable',
+  sourceError: undefined
+}
+4:33:42 PM [express] GET /api/students 500 in 172ms :: {"message":"Failed to fetch students"}
+Error fetching students: NeonDbError: relation "students" does not exist
+    at execute (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1556:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async NeonHttpPreparedQuery.execute (file:///opt/render/project/src/node_modules/drizzle-orm/neon-http/session.js:40:20)
+    at async DatabaseStorage.getStudents (file:///opt/render/project/src/dist/index.js:86:12)
+    at async file:///opt/render/project/src/dist/index.js:112:25 {
+  severity: 'ERROR',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '78',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1449',
+  routine: 'parserOpenTable',
+  sourceError: undefined
+}
+4:33:48 PM [express] GET /api/students 500 in 498ms :: {"message":"Failed to fetch students"}
